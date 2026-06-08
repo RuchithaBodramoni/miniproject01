@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images.png">
+    <title>BhagavadGita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar unselectable">
+        <ul>
+            <li onclick="navClick('31')">Shloka-31</li>
+            <li onclick="navClick('32')">Shloka-32</li>
+            <li onclick="navClick('33')">Shloka-33</li>
+            <li onclick="navClick('34')">Shloka-34</li>
+            <li onclick="navClick('35')">Shloka-35</li>
+            <li onclick="navClick('36')">Shloka-36</li>
+            <li onclick="navClick('37')">Shloka-37</li>
+            <li onclick="navClick('38')">Shloka-38</li>
+            <li onclick="navClick('39')">Shloka-39</li>
+            <li onclick="navClick('40')">Shloka-40</li>
+        </ul>
+    </div>
+    <div class="container">
+    <div class="wallpaper"></div>
+    <div class="shloka1">
+        <p class="shloka-box" id="shloka-box">
+            निमित्तानि च पश्यामि विपरीतानि केशव ।<br> 
+            न च श्रेयोऽनुपश्यामि हत्वा स्वजनमाहवे ।।1.31।
+        </p>
+        <div class="buttons">
+        <button onclick="changeText('1')">telugu</button>
+        <button onclick="changeText('2')">english</button>
+        <button onclick="changeText('3')">odia</button>
+        <button onclick="changeText('4')">kanada</button>
+        <button onclick="changeText('5')">malayalam</button>
+    </div>
+    <p><span style="background-color: rgba(80, 37, 14, 0.7); padding: 0.2em;">MALE</span></p>
+     <audio id="audPlayer" controls>
+        <source src="https://ik.imagekit.io/bfu5vagvs/AUDIO-2024-11-29-10-19-35.m4a?updatedAt=1732886086454&raw=1"type="audio/mpeg"> 
+    </audio>
+    <p><p><span style="background-color: rgba(80, 37, 14, 0.7); padding: 0.2em;">CHILD</span></p></p>
+    <audio id="audPlayer1" controls>
+        <source src="https://ik.imagekit.io/bfu5vagvs/31%20child.m4a?updatedAt=1732889759036&raw=1"type="audio/mpeg"> 
+    </audio>
+    <p><p><span style="background-color: rgba(80, 37, 14, 0.7); padding: 0.2em;">FEMALE</span></p></p>
+    <audio id="audPlayer2" controls>
+        <source src="https://ik.imagekit.io/bfu5vagvs/WhatsApp%20Audio%202024-11-29%20at%205.22.51%20PM.mpeg?updatedAt=1732892243438&raw=1"type="audio/mpeg"> 
+    </audio>
+    <p><p><span style="background-color: rgba(80, 37, 14, 0.7); padding: 0.2em;">MEANING</span></p></p>    
+    <p class="meaning-box" id="meaning-box">
+           
+    </p>
+    <div class="buttons">
+        <button onclick="translateMeaning('1')">telugu</button>
+        <button onclick="translateMeaning('2')">english</button>
+        <button onclick="translateMeaning('3')">odia</button>
+        <button onclick="translateMeaning('4')">kannada</button>
+        <button onclick="translateMeaning('5')">malayalam</button>
+        
+    </div>
+    <p><p><span style="background-color: rgba(80, 37, 14, 0.7); padding: 0.2em;">SUMMARY</span></p></p>
+    <p class="summary-box" id="summary-box">
+           
+    </p>
+    <div class="buttons">
+        <button onclick="translateSummary('1')">telugu</button>
+        <button onclick="translateSummary('2')">english</button>
+        <button onclick="translateSummary('3')">odia</button>
+        <button onclick="translateSummary('4')">kannada</button>
+        <button onclick="translateSummary('5')">malayalam</button>
+
+    </div>
+    
+    <p><p><span style="background-color: rgba(80, 37, 14, 0.7); padding: 0.2em;">Word to Word Meaning(Pratipadartha) </span></p></p>
+    <p class="word-meaning-box" id="word-meaning-box"></p>
+</p>
+<div class="buttons">
+    <button onclick="translateWordMeaning('1')">telugu</button>
+    <button onclick="translateWordMeaning('2')">english</button>
+    <button onclick="translateWordMeaning('3')">odia</button>
+    <button onclick="translateWordMeaning('4')">kannada</button>
+    <button onclick="translateWordMeaning('5')">malayalam</button>
+</div>
+    <!-- Image Section -->
+    <p><span style="background-color: rgba(80, 37, 14, 0.7); padding: 0.2em;">Shloka Image:</span></p>
+    <div class="image-box">
+        <img id="shloka-image" src="https://ik.imagekit.io/8admtjxvn/download.jpg?updatedAt=1733243288384&raw=1" alt="Shloka Image" style="width: 100%; max-width: 500px; border: 1px solid #ccc;">
+    </div>
+</div>
+    </div>
+</body>
+<script type="module" src="script.js">  
+</script>
+</html>

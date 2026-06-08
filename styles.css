@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web", sans-serif;
+    color: whitesmoke;
+    font-size: 24px; 
+    box-sizing: border-box;
+}
+
+.unselectable {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+    background-image: url("https://ik.imagekit.io/bfu5vagvs/varshu2.jpg?updatedAt=1733461840320&raw=1");
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    position: relative;
+    background-color: brown;
+    width: 100vw;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 5vh 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.shloka1, .meaning-box, .translation-box, .word-meaning-box, .summary-box {
+    position: relative;
+    width: 60vw;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2vw;
+    align-items: center;
+    text-align: center;
+    border-radius: 2vw;
+    box-shadow: rgb(0, 0, 0, 0.4) 0 5px 5px;
+    background: rgba(255, 202, 156, 0.2);
+}
+
+.shloka-box, .meaning-box, .translation-box, .word-meaning-box, .summary-box {
+    font-size: 2vw;
+    padding: 2vw;
+    color: white; 
+    width: 50vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 2vw;
+    box-shadow: rgb(0, 0, 0, 0.4) 0 5px 5px;
+    background: rgba(80, 37, 14, 0.7);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.meaning-box {
+    background: rgba(80, 37, 14, 0.7); /* Blue-ish background for meaning */
+}
+
+.translation-box {
+    background: rgba(80, 37, 14, 0.7); /* Orange-ish background for translation */
+}
+
+.word-meaning-box {
+    background: rgba(80, 37, 14, 0.7); /* Green-ish background for word meaning */
+}
+
+.summary-box {
+    background: rgba(80, 37, 14, 0.7);; /* Red-ish background for summary */
+}
+
+.hidden {
+    display: none;
+}
+
+ul {
+    border-left: solid rgba(255, 255, 255, 0.4) 5px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 2vw;
+}
+
+ul li {
+    margin: 1vw;
+    margin-left: 1vw;
+    transition: 0.5s ease-in-out;
+    padding: 0.5vw 0;
+}
+
+li:hover {
+    cursor: pointer;
+    font-size: 1.3vw;
+    transition: 0.5s ease-in-out;
+    padding: 0;
+}
+
+li::marker {
+    font-size: 1.5vw;
+}
+
+.navbar {
+    padding: 0 1vw 0 2vw;
+    width: fit-content;
+    position: fixed;
+    top: 0;
+    left: 2vw;
+    height: 100vh;
+    z-index: 99;
+    font-size: 1vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+
+button {
+    color: white;
+    padding: 1vw;
+    border-radius: 20px;
+    font-size: 1vw;
+    text-align: center;
+    background: rgba(80, 37, 14, 0.7);
+    box-shadow: rgb(0, 0, 0, 0.4) 0 5px 5px;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+    box-shadow: none;
+    border: 0.3vw solid rgba(80, 37, 14, 0.7);
+    color: white;
+}
